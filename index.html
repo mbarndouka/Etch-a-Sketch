@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="viewport" content="width-device-with, initial-scale-1.0">
+        <title>Grid Sketch Pad</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="flex-container">
+            <h1 class="title">Etch a sketch</h1>
+            <div class="content">
+                <div class="mode">Mode: coloring</div>
+                <div class="board"></div>
+                <div class="buttons">
+                    <button class="blackButton" onclick="changeColor('black')">Black</button>
+                    <button class="erasorButton" onclick="changeColor('white')">Eraser</button>
+                    <button class="grayButton" onclick="changeColor('gray')">Gray</button>
+                    <button class="randomButton" onclick="changeColor('random')">random</button>
+                    <button onclick="resetBoard()">Reset</button>
+                </div>
+                <div>
+                    <input type="text"
+                    placeholder="size of board"
+                    value="16"
+                    onchange="changeSize(this.value)"/>
+                    <button>set size</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
